@@ -1,0 +1,176 @@
+.product-price span {
+      font-size: 0.75rem;
+      font-weight: normal;
+      color: var(--text-muted);
+    }
+
+    .add-btn {
+      background: #f1f3f5;
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- هدر رستوران -->
+  <header>
+    <div class="logo-container">
+      <img src="https://dolcevita.easimenu.ir/static/uploads/logos/16b68ca77333456c9c657bab043a2b9e.png" alt="Dolcevita Logo">
+    </div>
+    <h1>Dolcevita</h1>
+    <div class="badge">سفارش حضوری • بدون نیاز به اپلیکیشن</div>
+  </header>
+
+  <!-- نوار دسته‌بندی -->
+  <nav class="categories-nav">
+    <button class="cat-btn active" onclick="filterCategory('all')">همه</button>
+    <button class="cat-btn" onclick="filterCategory('food')">غذا</button>
+    <button class="cat-btn" onclick="filterCategory('starter')">پیش غذا</button>
+    <button class="cat-btn" onclick="filterCategory('bakery')">بیکری</button>
+  </nav>
+
+  <!-- لیست آیتم‌ها -->
+  <div class="container">
+
+    <!-- بخش غذا -->
+    <div class="category-group" id="food">
+      <div class="section-title">
+        غذاها
+        <span>۱۱ مورد</span>
+      </div>
+
+      <div class="product-card">
+        <img class="product-img" src="https://dolcevita.easimenu.ir/static/uploads/products/729de8c67f514d91a10cf1f20f427114.jpeg" alt="برگر دولچه ویتا">
+        <div class="product-info">
+          <div class="product-title">برگر دولچه ویتا</div>
+          <div class="product-footer">
+            <div class="product-price">۱,۱۵۰,۰۰۰ <span>تومان</span></div>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-img" src="https://dolcevita.easimenu.ir/static/uploads/products/fba0e8e630f142bba52d5e81d109b8f4.jpg" alt="برگر کلاسیک">
+        <div class="product-info">
+          <div class="product-title">برگر کلاسیک</div>
+          <div class="product-footer">
+            <div class="product-price">۷۷۰,۰۰۰ <span>تومان</span></div>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-img" src="https://dolcevita.easimenu.ir/static/uploads/products/a9e3af3bcf374db2a1335a3ce5f4f7be.jpeg" alt="برگر آنیون">
+        <div class="product-info">
+          <div class="product-title">برگر آنیون</div>
+          <div class="product-footer">
+            <div class="product-price">۹۳۰,۰۰۰ <span>تومان</span></div>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-img" src="https://dolcevita.easimenu.ir/static/uploads/products/3e2619fbcb6440949666f08edeb6f475.jpeg" alt="پاستا چیکن آلفردو">
+        <div class="product-info">
+          <div class="product-title">پاستا چیکن آلفردو</div>
+          <div class="product-footer">
+            <div class="product-price">۸۶۰,۰۰۰ <span>تومان</span></div>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- بخش پیش غذا -->
+    <div class="category-group" id="starter">
+      <div class="section-title">
+        پیش غذا
+        <span>۷ مورد</span>
+      </div>
+
+      <div class="product-card">
+        <img class="product-img" src="https://dolcevita.easimenu.ir/static/uploads/products/2668c3f61cbf4d62a6bfea27fdf5155b.jpeg" alt="سیب زمینی دولچه ویتا">
+        <div class="product-info">
+          <div class="product-title">سیب زمینی دولچه ویتا</div>
+          <div class="product-footer">
+            <div class="product-price">۵۴۰,۰۰۰ <span>تومان</span></div>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+<div class="product-card">
+        <img class="product-img" src="https://dolcevita.easimenu.ir/static/uploads/products/04d1598652c74cd99bb0afbf7a52845b.jpeg" alt="سالاد سزار گریل">
+        <div class="product-info">
+          <div class="product-title">سالاد سزار گریل</div>
+          <div class="product-footer">
+            <div class="product-price">۷۵۰,۰۰۰ <span>تومان</span></div>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- بخش بیکری -->
+    <div class="category-group" id="bakery">
+      <div class="section-title">
+        بیکری و دسر
+        <span>۱۰ مورد</span>
+      </div>
+
+      <div class="product-card">
+        <img class="product-img" src="https://dolcevita.easimenu.ir/static/uploads/products/b771da559df04eb4a09bf4ed8af7a5d9.jpeg" alt="چیز کیک توت فرنگی">
+        <div class="product-info">
+          <div class="product-title">چیز کیک توت فرنگی</div>
+          <div class="product-footer">
+            <div class="product-price">۴۴۵,۰۰۰ <span>تومان</span></div>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img class="product-img" src="https://dolcevita.easimenu.ir/static/uploads/products/3b4fced805474d7ea403ac5fd32ec5e8.jpeg" alt="چیز کیک سن سباستین">
+        <div class="product-info">
+          <div class="product-title">چیز کیک سن سباستین</div>
+          <div class="product-footer">
+            <div class="product-price">۳۵۰,۰۰۰ <span>تومان</span></div>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function filterCategory(category) {
+      // تغییر استایل دکمه فعال
+      const buttons = document.querySelectorAll('.cat-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // فیلتر کردن دسته‌بندی‌ها
+      const groups = document.querySelectorAll('.category-group');
+      groups.forEach(group => {
+        if (category === 'all' || group.id === category) {
+          group.style.display = 'block';
+        } else {
+          group.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
